@@ -4058,6 +4058,16 @@ files = [
 ]
 
 [[package]]
+name = "pysqlite3"
+version = "0.5.3"
+description = "DB-API 2.0 interface for Sqlite 3.x"
+optional = false
+python-versions = "*"
+files = [
+    {file = "pysqlite3-0.5.3.tar.gz", hash = "sha256:54a98e05b087c2c064c8d5b58e9b8f403082eadf830d7d30ede4ecf6a5a5f143"},
+]
+
+[[package]]
 name = "pytest"
 version = "8.3.2"
 description = "pytest: simple powerful testing with Python"
@@ -5834,4 +5844,4 @@ test = ["big-O", "importlib-resources", "jaraco.functools", "jaraco.itertools", 
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<=3.13"
-content-hash = "af2a10bc695c25ba5590c6b0be0e9a817a7d6de2c287016a94fef3f0cc68dd78"
+content-hash = "b1f5c0d4c14747af19259f0980827c61fdffc767c9e4a114a6276e4763e25e6a"
