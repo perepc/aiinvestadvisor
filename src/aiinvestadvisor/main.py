@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 import os
 import streamlit as st
-from aiinvestadvisor.crew import AIInvestAdvisorCrew
+# from aiinvestadvisor.crew import AIInvestAdvisorCrew
+from aiinvestadvisor.aiinvestadvisor.crew import AIInvestAdvisorCrew
+
+os.environ['GROQ_API_KEY'] = ""
 
 
 def run():

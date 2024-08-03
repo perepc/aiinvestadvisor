@@ -2,7 +2,7 @@ from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from langchain_groq.chat_models import ChatGroq
 from dotenv import load_dotenv
-from aiinvestadvisor.tools.custom_tools import SearchTools, ReadTools
+from aiinvestadvisor.aiinvestadvisor.tools.custom_tools import SearchTools, ReadTools
 load_dotenv()
 
 model = ChatGroq(model="llama3-8b-8192")
