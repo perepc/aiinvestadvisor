@@ -1,6 +1,6 @@
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
-from ..aiinvestadvisor.tools.custom_tools import SearchTools, ReadTools
+from aiinvestadvisor.aiinvestadvisor.tools.custom_tools import SearchTools, ReadTools
 
 
 # model = ChatGroq(model="llama3-8b-8192")
