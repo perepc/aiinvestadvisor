@@ -2,8 +2,7 @@
 import os
 import streamlit as st
 from dotenv import load_dotenv
-# from aiinvestadvisor.crew import AIInvestAdvisorCrew
-from aiinvestadvisor.aiinvestadvisor.crew import AIInvestAdvisorCrew
+from ..aiinvestadvisor.aiinvestadvisor.crew import AIInvestAdvisorCrew
 
 load_dotenv()
 
