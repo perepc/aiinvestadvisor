@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import os
 import streamlit as st
 from aiinvestadvisor.crew import AIInvestAdvisorCrew
 
@@ -30,6 +31,7 @@ if submit_button:
         if not groq_api_key:
             st.write("You must enter you Groq API key!")
         else:
+            os.environ['GROQ_API_KEY'] = groq_api_key
             inputs = {
                 'current_year': '2024',
                 'company': company
