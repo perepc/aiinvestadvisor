@@ -53,7 +53,7 @@ class AIInvestAdvisorCrew():
             config=self.tasks_config['analysis_task'],
             agent=self.financial_results_analyst(),
             context=[self.research_task()],
-            output_file='final_advice_report.md',
+            output_file='output/final_advice_report.md',
         )
 
     # @task
@@ -62,7 +62,7 @@ class AIInvestAdvisorCrew():
     #         config=self.tasks_config['write_email_task'],
     #         agent=self.email_writer(),
     #         context=[self.analysis_task()],
-    #         output_file='email_to_your_customer.txt'
+    #         output_file='output/email_to_your_customer.txt'
     #     )
 
     @crew
