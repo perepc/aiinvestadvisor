@@ -1,17 +1,17 @@
 #!/usr/bin/env python
 import os
 import streamlit as st
+from dotenv import load_dotenv
 # from aiinvestadvisor.crew import AIInvestAdvisorCrew
 from aiinvestadvisor.aiinvestadvisor.crew import AIInvestAdvisorCrew
 
-os.environ['GROQ_API_KEY'] = ""
+load_dotenv()
 
 
 def run():
     """
     Run the crew.
     """
-
     _inputs = {
         'current_year': '2024',
         'company': 'Apple'
@@ -34,7 +34,9 @@ if submit_button:
         if not groq_api_key:
             st.write("You must enter you Groq API key!")
         else:
-            os.environ['GROQ_API_KEY'] = groq_api_key
+            os.environ["OPENAI_API_KEY"] = groq_api_key
+            os.environ["OPENAI_MODEL_NAME"] = 'llama3-8b-8192'
+            os.environ["OPENAI_API_BASE"] = 'https://api.groq.com/openai/v1'
             inputs = {
                 'current_year': '2024',
                 'company': company
