@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "aiinvestadvisor"
+version = "0.1.0"
+description = "AI Invest Advisor using crewAI"
+authors = ["Pere Pasamonte <perepc@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = {extras = ["tools"], version = "^0.41.1"}
+langchain-groq = "^0.1.6"
+duckduckgo-search = "^6.2.3"
+streamlit = "^1.37.0"
+func-timeout = "^4.3.5"
+call-function-with-timeout = "^1.1.1"
+chroma = "^0.2.0"
+
+[tool.poetry.scripts]
+aiinvestadvisor = "aiinvestadvisor.main:run"
+train = "investadvisor.main:train"
+replay = "investadvisor.main:replay"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
